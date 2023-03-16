@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--context schema-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id="collect" class="org.tnsif.collections.CollectionDemo">
+<property name="contactNo">
+<list>
+	<value>8806773064</value>
+	<value>8232834634</value>
+	<value>3454566342</value>
+</list>
+</property>
+<property name="books">
+<set>
+	<value>AI</value>
+	<value>BI</value>
+	<value>DL</value>
+</set>
+</property>
+</bean>
+</beans>
